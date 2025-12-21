@@ -8,7 +8,7 @@ Currently, there are 5 commands available:
 - `/feed` — Fills your hunger bar completely. Requires permission `survivalutils.feed`.  
 - `/repair` — Repairs the item you’re holding. Requires permission `survivalutils.repair`.
 - `/craft` — Opens the crafting table. Requires permission `survivalutils.craft`.
-- `/gamemode <0-3|name>` — Changes your game mode using the classic Minecraft numbers (0 = Survival, 1 = Creative, 2 = Adventure, 3 = Spectator) or the usual game mode names. Requires permission `qolcommands.gamemode`.  
+- `/gamemode <0-3|name>` — Changes your game mode using the classic Minecraft numbers (0 = Survival, 1 = Creative, 2 = Adventure, 3 = Spectator) or the usual game mode names. Requires permission `survivalutils.gamemode`.  
   *This command brings back the original numeric way to switch game modes!*
 
 ## Installation  
