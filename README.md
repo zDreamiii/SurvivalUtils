@@ -1,12 +1,13 @@
-# QOLCommandsPlugin  
+# SurvivalUtils  
 This is a Quality of Life Plugin for Minecraft 1.21.5 that adds useful commands to improve gameplay.
 
 ## Overview  
-Currently, there are 4 commands available:
+Currently, there are 5 commands available:
 
-- `/heal` — Restores your health to full. Requires permission `qolcommands.heal`.  
-- `/feed` — Fills your hunger bar completely. Requires permission `qolcommands.feed`.  
-- `/repair` — Repairs the item you’re holding. Requires permission `qolcommands.repair`.  
+- `/heal` — Restores your health to full. Requires permission `survivalutils.heal`.  
+- `/feed` — Fills your hunger bar completely. Requires permission `survivalutils.feed`.  
+- `/repair` — Repairs the item you’re holding. Requires permission `survivalutils.repair`.
+- `/craft` — Opens the crafting table. Requires permission `survivalutils.craft`.
 - `/gamemode <0-3|name>` — Changes your game mode using the classic Minecraft numbers (0 = Survival, 1 = Creative, 2 = Adventure, 3 = Spectator) or the usual game mode names. Requires permission `qolcommands.gamemode`.  
   *This command brings back the original numeric way to switch game modes!*
 
@@ -18,14 +19,15 @@ Currently, there are 4 commands available:
 ## Permissions  
 Each command requires a specific permission node:
 
-| Command      | Permission              |  
-|--------------|-------------------------|  
-| `/heal`      | `qolcommands.heal`       |  
-| `/feed`      | `qolcommands.feed`       |  
-| `/repair`    | `qolcommands.repair`     |  
-| `/gamemode`  | `qolcommands.gamemode`   |  
+| Command      | Permission                 |  
+|--------------|----------------------------|  
+| `/heal`      | `survivalutils.heal`       |  
+| `/feed`      | `survivalutils.feed`       |  
+| `/repair`    | `survivalutils.repair`     |  
+| `/craft`     | `survivalutils.craft`      | 
+| `/gamemode`  | `survivalutils.gamemode`   |  
 
-There is also a wildcard permission: `qolcommands.*` — this grants access to **all commands** and is by default assigned to server operators (`op`).
+There is also a wildcard permission: `survivalutils.*` — this grants access to **all commands** and is by default assigned to server operators (`op`).
 
 Make sure to assign the appropriate permissions to your players or groups via your permissions plugin.
 
