@@ -1,4 +1,4 @@
-package at.zDreamiii.qOLCommands;
+package at.zDreamiii.survivalUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,10 +6,10 @@ import java.util.UUID;
 
 public class CooldownManager {
 
-    private final QOLCommands plugin;
+    private final SurvivalUtils plugin;
     private final Map<String, Long> cooldowns = new HashMap<>();
 
-    public CooldownManager(QOLCommands plugin) {
+    public CooldownManager(SurvivalUtils plugin) {
         this.plugin = plugin;
     }
 

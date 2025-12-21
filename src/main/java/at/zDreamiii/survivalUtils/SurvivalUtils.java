@@ -1,9 +1,9 @@
-package at.zDreamiii.qOLCommands;
+package at.zDreamiii.survivalUtils;
 
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class QOLCommands extends JavaPlugin {
+public final class SurvivalUtils extends JavaPlugin {
 
     private CooldownManager cooldownManager;
 
@@ -17,6 +17,8 @@ public final class QOLCommands extends JavaPlugin {
         this.getCommand("feed").setExecutor(new Feed(this));
         this.getCommand("repair").setExecutor(new Repair(this));
         this.getCommand("gamemode").setExecutor(new Gamemode());
+        this.getCommand("gamemode").setTabCompleter(new GamemodeTabCompleter());
+        this.getCommand("craft").setExecutor(new Workbench(this));
 
     }
 

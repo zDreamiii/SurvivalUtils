@@ -1,4 +1,4 @@
-package at.zDreamiii.qOLCommands;
+package at.zDreamiii.survivalUtils;
 
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
@@ -19,7 +19,7 @@ public class Gamemode implements CommandExecutor {
 
         Player player = (Player) sender;
 
-        if (!player.hasPermission("qolcommands.gamemode")) {
+        if (!player.hasPermission("survivalutils.gamemode")) {
             player.sendMessage("§cYou don’t have permission to use this command!");
             return true;
         }

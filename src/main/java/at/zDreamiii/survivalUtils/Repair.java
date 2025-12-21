@@ -1,4 +1,4 @@
-package at.zDreamiii.qOLCommands;
+package at.zDreamiii.survivalUtils;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -11,9 +11,9 @@ import org.bukkit.inventory.meta.Damageable;
 
 public class Repair implements CommandExecutor {
 
-    private final QOLCommands plugin;
+    private final SurvivalUtils plugin;
 
-    public Repair(QOLCommands plugin) {
+    public Repair(SurvivalUtils plugin) {
         this.plugin = plugin;
     }
 
@@ -28,7 +28,7 @@ public class Repair implements CommandExecutor {
         Player player = (Player) sender;
         ItemStack item = player.getInventory().getItemInMainHand();
 
-        if (!player.hasPermission("qolcommands.repair")) {
+        if (!player.hasPermission("survivalutils.repair")) {
             player.sendMessage("§cYou don’t have permission to use this command!");
             return true;
         }

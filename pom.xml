@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>at.zDreamiii</groupId>
-    <artifactId>QOLCommands</artifactId>
+    <artifactId>SurvivalUtils</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>QOLCommands</name>
+    <name>SurvivalUtils</name>
 
     <properties>
         <java.version>21</java.version>

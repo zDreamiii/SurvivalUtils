@@ -1,36 +1,42 @@
-name: QOLCommands
-version: '1.1.1'
-main: at.zDreamiii.qOLCommands.QOLCommands
+name: SurvivalUtils
+version: '1.1.2'
+main: at.zDreamiii.survivalUtils.SurvivalUtils
 api-version: '1.21'
 
 commands:
-  Feed:
+  feed:
     description: Fills your hunger bar completely
     usage: /feed
-    permission: qolcommands.feed
+    permission: survivalutils.feed
     permission-message: "§cYou do not have permission to use this command!"
-  Heal:
+  heal:
     description: Restores your health completely
     usage: /heal
-    permission: qolcommands.heal
+    permission: survivalutils.heal
     permission-message: "§cYou do not have permission to use this command!"
-  Repair:
+  repair:
     description: Fully repairs your items
     usage: /repair
-    permission: qolcommands.repair
+    permission: survivalutils.repair
     permission-message: "§cYou do not have permission to use this command!"
-  Gamemode:
+  gamemode:
     description: Change your game mode like before using numbers (or names)
     usage: /gamemode <0-3|name>
-    permission: qolcommands.gamemode
+    permission: survivalutils.gamemode
+    permission-message: "§cYou do not have permission to use this command!"
+  craft:
+    description: Opens a crafting table
+    usage: /craft
+    permission: survivalutils.workbench
     permission-message: "§cYou do not have permission to use this command!"
 
 permissions:
-  qolcommands.*:
-    description: Grants access to all QOLCommands commands
+  survivalutils.*:
+    description: Grants access to all SurvivalUtils commands
     default: op
     children:
-      qolcommands.feed: true
-      qolcommands.heal: true
-      qolcommands.repair: true
-      qolcommands.gamemode: true
+      survivalutils.feed: true
+      survivalutils.heal: true
+      survivalutils.repair: true
+      survivalutils.gamemode: true
+      survivalutils.craft: true

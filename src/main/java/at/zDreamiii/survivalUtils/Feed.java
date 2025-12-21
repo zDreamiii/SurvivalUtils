@@ -1,4 +1,4 @@
-package at.zDreamiii.qOLCommands;
+package at.zDreamiii.survivalUtils;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -8,9 +8,9 @@ import org.bukkit.entity.Player;
 
 public class Feed implements CommandExecutor {
 
-    private final QOLCommands plugin;
+    private final SurvivalUtils plugin;
 
-    public Feed(QOLCommands plugin) {
+    public Feed(SurvivalUtils plugin) {
         this.plugin = plugin;
     }
 
@@ -24,7 +24,7 @@ public class Feed implements CommandExecutor {
 
         Player player = (Player) sender;
 
-       if (!player.hasPermission("qolcommands.feed")) {
+       if (!player.hasPermission("survivalutils.feed")) {
            player.sendMessage("§cYou don’t have permission to use this command!");
            return true;
        }
