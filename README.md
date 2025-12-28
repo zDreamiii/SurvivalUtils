@@ -7,7 +7,7 @@ Currently, there are 5 commands available:
 - `/heal` — Restores your health to full. Requires permission `survivalutils.heal`.  
 - `/feed` — Fills your hunger bar completely. Requires permission `survivalutils.feed`.  
 - `/repair` — Repairs the item you’re holding. Requires permission `survivalutils.repair`.
-- `/craft` — Opens the crafting table. Requires permission `survivalutils.craft`.
+- `/craft` — Opens the crafting table. Requires permission `survivalutils.workbench`.
 - `/gamemode <0-3|name>` — Changes your game mode using the classic Minecraft numbers (0 = Survival, 1 = Creative, 2 = Adventure, 3 = Spectator) or the usual game mode names. Requires permission `survivalutils.gamemode`.  
   *This command brings back the original numeric way to switch game modes!*
 
@@ -24,7 +24,7 @@ Each command requires a specific permission node:
 | `/heal`      | `survivalutils.heal`       |  
 | `/feed`      | `survivalutils.feed`       |  
 | `/repair`    | `survivalutils.repair`     |  
-| `/craft`     | `survivalutils.craft`      | 
+| `/craft`     | `survivalutils.workbench`  | 
 | `/gamemode`  | `survivalutils.gamemode`   |  
 
 There is also a wildcard permission: `survivalutils.*` — this grants access to **all commands** and is by default assigned to server operators (`op`).
