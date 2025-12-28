@@ -25,13 +25,13 @@ public class Feed implements CommandExecutor {
         Player player = (Player) sender;
 
        if (!player.hasPermission("survivalutils.feed")) {
-           player.sendMessage("§cYou don’t have permission to use this command!");
+           player.sendMessage(ChatColor.RED +"You don’t have permission to use this command!");
            return true;
        }
 
         if (plugin.getCooldownManager().isOnCooldown(player.getUniqueId(), "feed")) {
             long remaining = plugin.getCooldownManager().getRemainingTime(player.getUniqueId(), "feed");
-            player.sendMessage("§cYou must wait " + remaining + " seconds before using this command again!");
+            player.sendMessage(ChatColor.RED + "You must wait " + remaining + " seconds before using this command again!");
             return true;
        }
 

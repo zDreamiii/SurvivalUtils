@@ -24,19 +24,19 @@ public class Heal implements CommandExecutor {
         Player player = (Player) sender;
 
         if (!player.hasPermission("survivalutils.heal")) {
-            player.sendMessage("§cYou don’t have permission to use this command!");
+            player.sendMessage(ChatColor.RED +"You don’t have permission to use this command!");
             return true;
         }
 
         if (plugin.getCooldownManager().isOnCooldown(player.getUniqueId(), "heal")) {
             long remaining = plugin.getCooldownManager().getRemainingTime(player.getUniqueId(), "heal");
-            player.sendMessage("§cYou must wait " + remaining + " seconds before using this command again!");
+            player.sendMessage(ChatColor.RED + "You must wait " + remaining + " seconds before using this command again!");
             return true;
 
         }
 
         player.setHealth(20);
-        player.sendMessage("§aYou have been fully healed!");
+        player.sendMessage(ChatColor.GREEN + "You have been fully healed!");
 
         plugin.getCooldownManager().setCooldown(player.getUniqueId(), "heal");
         return true;

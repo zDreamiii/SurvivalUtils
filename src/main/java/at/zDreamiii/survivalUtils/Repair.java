@@ -29,7 +29,7 @@ public class Repair implements CommandExecutor {
         ItemStack item = player.getInventory().getItemInMainHand();
 
         if (!player.hasPermission("survivalutils.repair")) {
-            player.sendMessage("§cYou don’t have permission to use this command!");
+            player.sendMessage(ChatColor.RED + "You don’t have permission to use this command!");
             return true;
         }
 
@@ -41,7 +41,7 @@ public class Repair implements CommandExecutor {
 
         if (plugin.getCooldownManager().isOnCooldown(player.getUniqueId(), "repair")) {
             long remaining = plugin.getCooldownManager().getRemainingTime(player.getUniqueId(), "repair");
-            player.sendMessage("§cYou must wait " + remaining + " seconds before using this command again!");
+            player.sendMessage(ChatColor.RED + "You must wait " + remaining + " seconds before using this command again!");
             return true;
         }
 

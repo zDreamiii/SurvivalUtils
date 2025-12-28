@@ -20,7 +20,7 @@ public class Gamemode implements CommandExecutor {
         Player player = (Player) sender;
 
         if (!player.hasPermission("survivalutils.gamemode")) {
-            player.sendMessage("§cYou don’t have permission to use this command!");
+            player.sendMessage(  ChatColor.RED +"You don’t have permission to use this command!");
             return true;
         }
 

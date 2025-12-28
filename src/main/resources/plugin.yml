@@ -1,5 +1,5 @@
 name: SurvivalUtils
-version: '1.1.2'
+version: '1.2.1'
 main: at.zDreamiii.survivalUtils.SurvivalUtils
 api-version: '1.21'
 
@@ -39,4 +39,4 @@ permissions:
       survivalutils.heal: true
       survivalutils.repair: true
       survivalutils.gamemode: true
-      survivalutils.craft: true
+      survivalutils.workbench: true
