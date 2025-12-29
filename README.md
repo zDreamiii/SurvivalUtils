@@ -30,6 +30,3 @@ Each command requires a specific permission node:
 There is also a wildcard permission: `survivalutils.*` — this grants access to **all commands** and is by default assigned to server operators (`op`).
 
 Make sure to assign the appropriate permissions to your players or groups via your permissions plugin.
-
-## Usage  
-Use the commands directly in-game or in the console. Make sure you have the necessary permissions.
