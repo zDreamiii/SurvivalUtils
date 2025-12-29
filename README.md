@@ -27,6 +27,7 @@ Each command requires a specific permission node:
 | `/craft`     | `survivalutils.workbench`  | 
 | `/gamemode`  | `survivalutils.gamemode`   |  
 
-There is also a wildcard permission: `survivalutils.*` — this grants access to **all commands** and is by default assigned to server operators (`op`).
+Wildcard permission: survivalutils.* — grants access to **all commands**. 
+**Default:** Server operators (op) have access to all commands via the wildcard.
 
-Make sure to assign the appropriate permissions to your players or groups via your permissions plugin.
+Assign the appropriate permissions to your players or groups via your permissions plugin.
