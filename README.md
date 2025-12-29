@@ -4,11 +4,11 @@ This is a Quality of Life Plugin for Minecraft 1.21+ that adds useful commands t
 ## Overview  
 Currently, there are 5 commands available:
 
-- `/heal` — Restores your health to full. Requires permission `survivalutils.heal`.  
-- `/feed` — Fills your hunger bar completely. Requires permission `survivalutils.feed`.  
-- `/repair` — Repairs the item you’re holding. Requires permission `survivalutils.repair`.
-- `/craft` — Opens the crafting table. Requires permission `survivalutils.workbench`.
-- `/gamemode <0-3|name>` — Changes your game mode using the classic Minecraft numbers (0 = Survival, 1 = Creative, 2 = Adventure, 3 = Spectator) or the usual game mode names. Requires permission `survivalutils.gamemode`.  
+- `/heal` — Restores your health to full.  
+- `/feed` — Fills your hunger bar completely.  
+- `/repair` — Repairs the item you’re holding.
+- `/craft` — Opens the crafting table. 
+- `/gamemode <0-3|name>` — Changes your game mode using the classic Minecraft numbers (0 = Survival, 1 = Creative, 2 = Adventure, 3 = Spectator) or the usual game mode names.  
   *This command brings back the original numeric way to switch game modes!*
 
 ## Installation  
