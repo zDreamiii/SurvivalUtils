@@ -14,7 +14,7 @@ Currently, there are 5 commands available:
 ## Installation  
 1. Download the latest release from the Releases section.  
 2. Place the `.jar` file into your server's `plugins` folder.  
-3. Restart your server or run `/reload`.  
+3. Restart your server.
 
 ## Permissions  
 Each command requires a specific permission node:
