@@ -19,6 +19,7 @@ public final class SurvivalUtils extends JavaPlugin {
         this.getCommand("gamemode").setExecutor(new Gamemode());
         this.getCommand("gamemode").setTabCompleter(new GamemodeTabCompleter());
         this.getCommand("craft").setExecutor(new Workbench(this));
+        this.getCommand("anvil").setExecutor(new Anvil(this));
 
     }
 

@@ -1,5 +1,5 @@
 name: SurvivalUtils
-version: '1.2.1'
+version: '1.3.0'
 main: at.zDreamiii.survivalUtils.SurvivalUtils
 api-version: '1.21'
 
@@ -29,6 +29,11 @@ commands:
     usage: /craft
     permission: survivalutils.workbench
     permission-message: "§cYou do not have permission to use this command!"
+  anvil:
+    description: Opens an Anvil
+    usage: /anvil
+    permission: survivalutils.anvil
+    permission-message: "§cYou do not have permission to use this command!"
 
 permissions:
   survivalutils.*:
@@ -40,3 +45,4 @@ permissions:
       survivalutils.repair: true
       survivalutils.gamemode: true
       survivalutils.workbench: true
+      survivalutils.anvil: true

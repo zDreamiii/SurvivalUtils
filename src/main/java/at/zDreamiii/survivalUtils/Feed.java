@@ -37,7 +37,7 @@ public class Feed implements CommandExecutor {
 
         player.setFoodLevel(20);
         player.setSaturation(20f);
-        player.sendMessage(ChatColor.GREEN + "§aYour hunger has been satisfied!");
+        player.sendMessage(ChatColor.GREEN + "Your hunger has been satisfied!");
 
         plugin.getCooldownManager().setCooldown(player.getUniqueId(), "feed");
         return true;
