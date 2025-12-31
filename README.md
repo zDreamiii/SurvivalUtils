@@ -1,20 +1,20 @@
 # SurvivalUtils  
-This is a Quality of Life Plugin for Minecraft 1.21.5 that adds useful commands to improve gameplay.
+This is a Quality of Life Plugin for Minecraft 1.21+ that adds useful commands to improve gameplay.
 
 ## Overview  
 Currently, there are 5 commands available:
 
-- `/heal` — Restores your health to full. Requires permission `survivalutils.heal`.  
-- `/feed` — Fills your hunger bar completely. Requires permission `survivalutils.feed`.  
-- `/repair` — Repairs the item you’re holding. Requires permission `survivalutils.repair`.
-- `/craft` — Opens the crafting table. Requires permission `survivalutils.workbench`.
-- `/gamemode <0-3|name>` — Changes your game mode using the classic Minecraft numbers (0 = Survival, 1 = Creative, 2 = Adventure, 3 = Spectator) or the usual game mode names. Requires permission `survivalutils.gamemode`.  
+- `/heal` — Restores your health to full.  
+- `/feed` — Fills your hunger bar completely.  
+- `/repair` — Repairs the item you’re holding.
+- `/craft` — Opens the crafting table. 
+- `/gamemode <0-3|name>` — Changes your game mode using the classic Minecraft numbers (0 = Survival, 1 = Creative, 2 = Adventure, 3 = Spectator) or the usual game mode names.  
   *This command brings back the original numeric way to switch game modes!*
 
 ## Installation  
 1. Download the latest release from the Releases section.  
 2. Place the `.jar` file into your server's `plugins` folder.  
-3. Restart your server or run `/reload`.  
+3. Restart your server.
 
 ## Permissions  
 Each command requires a specific permission node:
@@ -27,9 +27,7 @@ Each command requires a specific permission node:
 | `/craft`     | `survivalutils.workbench`  | 
 | `/gamemode`  | `survivalutils.gamemode`   |  
 
-There is also a wildcard permission: `survivalutils.*` — this grants access to **all commands** and is by default assigned to server operators (`op`).
+Wildcard permission: survivalutils.* — grants access to **all commands**. 
+**Default:** Server operators (op) have access to all commands via the wildcard.
 
-Make sure to assign the appropriate permissions to your players or groups via your permissions plugin.
-
-## Usage  
-Use the commands directly in-game or in the console. Make sure you have the necessary permissions.
+Assign the appropriate permissions to your players or groups via your permissions plugin.
