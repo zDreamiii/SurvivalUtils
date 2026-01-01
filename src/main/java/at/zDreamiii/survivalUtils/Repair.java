@@ -33,9 +33,20 @@ public class Repair implements CommandExecutor {
             return true;
         }
 
-
         if (item == null || item.getType() == Material.AIR) {
             player.sendMessage(ChatColor.RED + "You must hold an item in your hand that can be repaired!");
+            return true;
+        }
+
+        if (!(item.getItemMeta() instanceof Damageable damageable)
+            || item.getType().getMaxDurability() <= 0) {
+            player.sendMessage(ChatColor.RED + "This item cannot be repaired.");
+            return true;
+
+        }
+
+        if (!damageable.hasDamage()) {
+            player.sendMessage(ChatColor.RED + "This item is already fully repaired.");
             return true;
         }
 
@@ -45,17 +56,12 @@ public class Repair implements CommandExecutor {
             return true;
         }
 
-        if (item.getItemMeta() instanceof Damageable damageable) {
-            damageable.setDamage(0);
-            item.setItemMeta(damageable);
-            player.sendMessage(ChatColor.GREEN + "Your item has been successfully repaired!");
+        damageable.setDamage(0);
+        item.setItemMeta(damageable);
 
+        player.sendMessage(ChatColor.GREEN + "Your item has been successfully repaired!");
+        plugin.getCooldownManager().setCooldown(player.getUniqueId(), "repair");
 
-            plugin.getCooldownManager().setCooldown(player.getUniqueId(), "repair");
-        } else {
-            player.sendMessage(ChatColor.RED + "This item cannot be repaired!");
-            return true;
-        }
         return true;
     }
 }

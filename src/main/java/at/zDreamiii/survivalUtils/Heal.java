@@ -1,6 +1,7 @@
 package at.zDreamiii.survivalUtils;
 
 import org.bukkit.ChatColor;
+import org.bukkit.attribute.Attribute;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -35,7 +36,8 @@ public class Heal implements CommandExecutor {
 
         }
 
-        player.setHealth(20);
+        double maxHealth = player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue();
+        player.setHealth(maxHealth);
         player.sendMessage(ChatColor.GREEN + "You have been fully healed!");
 
         plugin.getCooldownManager().setCooldown(player.getUniqueId(), "heal");
