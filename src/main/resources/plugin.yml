@@ -1,5 +1,5 @@
 name: SurvivalUtils
-version: '1.3.0'
+version: '1.4.0'
 main: at.zDreamiii.survivalUtils.SurvivalUtils
 api-version: '1.21'
 
@@ -29,11 +29,18 @@ commands:
     usage: /craft
     permission: survivalutils.workbench
     permission-message: "§cYou do not have permission to use this command!"
+    aliases: [workbench]
   anvil:
     description: Opens an Anvil
     usage: /anvil
     permission: survivalutils.anvil
     permission-message: "§cYou do not have permission to use this command!"
+  enderchest:
+    description: Opens your Enderchest
+    usage: /enderchest
+    permission: survivalutils.enderchest
+    permission-message: "§cYou do not have permission to use this command!"
+    aliases: [ec]
 
 permissions:
   survivalutils.*:
@@ -46,3 +53,4 @@ permissions:
       survivalutils.gamemode: true
       survivalutils.workbench: true
       survivalutils.anvil: true
+      survivalutils.enderchest: true
