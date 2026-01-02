@@ -1,5 +1,5 @@
 name: SurvivalUtils
-version: '1.4.1'
+version: '1.5.0'
 main: at.zDreamiii.survivalUtils.SurvivalUtils
 api-version: '1.21'
 
@@ -25,7 +25,7 @@ commands:
     permission: survivalutils.gamemode
     permission-message: "§cYou do not have permission to use this command!"
   craft:
-    description: Opens a crafting table
+    description: Opens a Crafting Table
     usage: /craft
     permission: survivalutils.workbench
     permission-message: "§cYou do not have permission to use this command!"
@@ -41,6 +41,11 @@ commands:
     permission: survivalutils.enderchest
     permission-message: "§cYou do not have permission to use this command!"
     aliases: [ec]
+  grindstone:
+    description: Opens a Grindstone
+    usage: /grindstone
+    permission: survivalutils.grindstone
+    permission-message: "§cYou do not have permission to use this command!"
 
 permissions:
   survivalutils.*:
@@ -54,3 +59,4 @@ permissions:
       survivalutils.workbench: true
       survivalutils.anvil: true
       survivalutils.enderchest: true
+      survivalutils.grindstone: true
