@@ -21,7 +21,6 @@ public final class SurvivalUtils extends JavaPlugin {
         this.getCommand("craft").setExecutor(new Workbench(this));
         this.getCommand("anvil").setExecutor(new Anvil(this));
         this.getCommand("enderchest").setExecutor(new Enderchest(this));
-        this.getCommand("grindstone").setExecutor(new Grindstone(this));
 
     }
 
