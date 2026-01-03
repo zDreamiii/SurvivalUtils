@@ -2,7 +2,7 @@
 This is a Quality of Life Plugin for Minecraft 1.21+ that adds useful commands to improve gameplay.
 
 ## Overview  
-Currently, there are 8 commands available:
+Currently, there are 7 commands available:
 
 - `/heal` — Restores your health to full.  
 - `/feed` — Fills your hunger bar completely.  
@@ -10,7 +10,6 @@ Currently, there are 8 commands available:
 - `/craft` — Opens a Crafting Table.
 - `/anvil` — Opens an Anvil.
 - `/enderchest` — Opens your Enderchest.
-- `/grindstone` — Opens a Grindstone.
 - `/gamemode <0-3|name>` — Changes your game mode using the classic Minecraft numbers (0 = Survival, 1 = Creative, 2 = Adventure, 3 = Spectator) or the usual game mode names.  
 - Configurable cooldowns for commands (adjustable in config.yml)
 
@@ -30,7 +29,6 @@ Each command requires a specific permission node:
 | `/craft`     | `survivalutils.workbench`  | 
 | `/anvil`     | `survivalutils.anvil`      |
 | `/enderchest`| `survivalutils.enderchest` |
-| `/grindstone`| `survivalutils.grindstone` |
 | `/gamemode`  | `survivalutils.gamemode`   |  
 
 Wildcard permission: survivalutils.* — grants access to **all commands**. 
