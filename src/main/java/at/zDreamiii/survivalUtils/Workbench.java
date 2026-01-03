@@ -1,13 +1,12 @@
 package at.zDreamiii.survivalUtils;
 
-import org.bukkit.Bukkit;
+
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.inventory.InventoryType;
-import org.bukkit.inventory.Inventory;
+
 
 
 public class Workbench implements CommandExecutor {
@@ -31,9 +30,7 @@ public class Workbench implements CommandExecutor {
             return true;
         }
 
-        Inventory workbench = Bukkit.createInventory(player, InventoryType.WORKBENCH, "Crafting");
-        player.openInventory(workbench);
-
+        player.openWorkbench(null, true);
         player.sendMessage(ChatColor.GREEN + "Workbench opened!");
         return true;
     }

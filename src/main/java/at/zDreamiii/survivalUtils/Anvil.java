@@ -1,13 +1,11 @@
 package at.zDreamiii.survivalUtils;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.inventory.InventoryType;
-import org.bukkit.inventory.Inventory;
+
 
 
 public class Anvil implements CommandExecutor {
@@ -31,9 +29,7 @@ public class Anvil implements CommandExecutor {
             return true;
         }
 
-        Inventory anvil = Bukkit.createInventory(player, InventoryType.ANVIL, "Anvil");
-        player.openInventory(anvil);
-
+        player.openAnvil(null, true);
         player.sendMessage(ChatColor.GREEN + "Anvil opened!");
         return true;
     }
