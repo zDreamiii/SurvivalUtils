@@ -6,11 +6,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Anvil implements CommandExecutor {
+public class Grindstone implements CommandExecutor {
 
     private final SurvivalUtils plugin;
 
-    public Anvil(SurvivalUtils plugin) {this.plugin = plugin;}
+    public Grindstone(SurvivalUtils plugin) {this.plugin = plugin;}
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -22,7 +22,7 @@ public class Anvil implements CommandExecutor {
 
         Player player = (Player) sender;
 
-        if (!player.hasPermission("survivalutils.anvil")) {
+        if (!player.hasPermission("survivalutils.grindstone")) {
             player.sendMessage(ChatColor.RED + "You don’t have permission to use this command!");
             return true;
         }
@@ -32,8 +32,8 @@ public class Anvil implements CommandExecutor {
             return true;
         }
 
-        player.openAnvil(null, true);
-        player.sendMessage(ChatColor.GREEN + "Anvil opened!");
+        player.openGrindstone(null, true);
+        player.sendMessage(ChatColor.GREEN + "Grindstone opened!");
         return true;
     }
 }
