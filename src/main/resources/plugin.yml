@@ -1,5 +1,5 @@
 name: SurvivalUtils
-version: '1.5.0'
+version: '1.6.0'
 main: at.zDreamiii.survivalUtils.SurvivalUtils
 api-version: '1.21'
 
@@ -52,21 +52,28 @@ commands:
     usage: /grindstone
     permission: survivalutils.grindstone
     permission-message: "§cYou do not have permission to use this command!"
+  rename:
+    description: Renames the item you are holding
+    usage: /rename <name>
+    permission: survivalutils.rename
+    permission-message: "§cYou do not have permission to use this command!"
 
 permissions:
   survivalutils.admin:
     description: Allows using admin commands like /survivalutils reload
     default: op
+    children:
+      survivalutils.gamemode: true
 
-  survivalutils.*:
-    description: Grants access to all SurvivalUtils commands
+  survivalutils.premium:
+    description: Grants access to all non-admin SurvivalUtils commands
     default: op
     children:
       survivalutils.feed: true
       survivalutils.heal: true
       survivalutils.repair: true
-      survivalutils.gamemode: true
       survivalutils.workbench: true
       survivalutils.anvil: true
+      survivalutils.grindstone: true
       survivalutils.enderchest: true
-      survivalutils.admin: true
+      survivalutils.rename: true

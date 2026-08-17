@@ -3,11 +3,9 @@ package at.zDreamiii.survivalUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Heal implements CommandExecutor {
+public class Heal extends PlayerCommand {
 
     private final SurvivalUtils plugin;
 
@@ -16,13 +14,7 @@ public class Heal implements CommandExecutor {
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-
-        if (!(sender instanceof Player)) {
-            sender.sendMessage(ChatColor.RED + "Only players can use this command!");
-            return true;
-        }
-        Player player = (Player) sender;
+    protected boolean onPlayerCommand(Player player, Command command, String label, String[] args) {
 
         if (!player.hasPermission("survivalutils.heal")) {
             player.sendMessage(ChatColor.RED +"You don’t have permission to use this command!");

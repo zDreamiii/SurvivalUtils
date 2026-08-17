@@ -3,13 +3,11 @@ package at.zDreamiii.survivalUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 
-public class Repair implements CommandExecutor {
+public class Repair extends PlayerCommand {
 
     private final SurvivalUtils plugin;
 
@@ -18,14 +16,7 @@ public class Repair implements CommandExecutor {
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-
-        if (!(sender instanceof Player)) {
-            sender.sendMessage(ChatColor.RED + "Only players can use this command!");
-            return true;
-        }
-
-        Player player = (Player) sender;
+    protected boolean onPlayerCommand(Player player, Command command, String label, String[] args) {
         ItemStack item = player.getInventory().getItemInMainHand();
 
         if (!player.hasPermission("survivalutils.repair")) {
